@@ -5,7 +5,7 @@ import java.sql.*;
 public class JdbcEx {
 
     //Command to link class and run
-    //java -cp .;mssql-jdbc.jar JdbcEx
+    //java -cp .;mssql.jar JdbcEx
 
     public static void main(String args[]) {
         try {
