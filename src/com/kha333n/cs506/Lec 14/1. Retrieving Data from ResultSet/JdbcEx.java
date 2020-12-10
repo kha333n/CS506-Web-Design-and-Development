@@ -12,9 +12,9 @@ public class JdbcEx {
 //Step 2: load driver
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 //Step 3: define the connection URL
-            String url = "jdbc:sqlserver://KHA333N\\SQLEXPRESS";
+            String url = "jdbc:sqlserver://cs506db.database.windows.net:1433;database=personinfo;user=jdbc@cs506db;password=DB.for.Java;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
 //Step 4: establish the connection
-            Connection con = DriverManager.getConnection(url,"jdbc","jdbc");
+            Connection con = DriverManager.getConnection(url);
 //Step 5: create Statement
             Statement st = con.createStatement();
 //Step 6: preapare & execute the query
