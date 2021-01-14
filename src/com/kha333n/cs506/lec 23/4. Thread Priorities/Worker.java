@@ -8,7 +8,7 @@ public class Worker implements Runnable {
     }
 //Implement run() method of Runnable interface
     public void run() {
-        for (int i = 1; i <= 10; i++) {
+        for (int i = 1; i <= 10000; i++) {
             System.out.println(job + " = " + i);
         }
     }
