@@ -1,2 +1,0 @@
-com/example/Lecture27/HelloWorldServelet.java
- com.example.Lecture27.HelloWorldServelet
