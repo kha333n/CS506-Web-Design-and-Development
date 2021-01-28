@@ -1,11 +1,13 @@
 // importing required packages
+
 import javax.swing.*;
 import java.awt.*;
+
 // extending class from JPanel
 public class MyPanel extends JPanel {
-// overriding paintComponent method
+    // overriding paintComponent method
     public void paintComponent(Graphics g) {
-// erasing behaviour – this will clear all the
+// erasing behaviour ï¿½ this will clear all the
 // previous painting
         super.paintComponent(g);
 // Down casting Graphics object to Graphics2D

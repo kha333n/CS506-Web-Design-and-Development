@@ -1,4 +1,5 @@
 // File FlowLayoutTest.java
+
 import java.awt.*;
 import javax.swing.*;
 
@@ -6,7 +7,8 @@ public class FlowLayoutTest {
 
     JFrame myFrame;
     JButton b1, b2, b3, b4, b5;
-//method used for setting layout of GUI
+
+    //method used for setting layout of GUI
     public void initGUI() {
         myFrame = new JFrame("Flow Layout");
         Container c = myFrame.getContentPane();
@@ -25,6 +27,7 @@ public class FlowLayoutTest {
         myFrame.setSize(300, 150);
         myFrame.setVisible(true);
     } //end initGUI method
+
     public FlowLayoutTest() { // default constructor
         initGUI();
     }

@@ -1,15 +1,17 @@
 // File JavaAnim.java
 //step 1: importing required packages
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
 public class JavaAnim extends JApplet implements ActionListener {
-// used to count how many times paint is called
+    // used to count how many times paint is called
     int clearCounter;
-// declaring Timer reference
+    // declaring Timer reference
     Timer t;
-// overriding init method, used to initialize variables
+
+    // overriding init method, used to initialize variables
     public void init() {
         setBackground(Color.black);
         clearCounter = 0;
@@ -17,7 +19,7 @@ public class JavaAnim extends JApplet implements ActionListener {
         t.start();
     }
 
-// overriding paint method – discussed above
+    // overriding paint method ï¿½ discussed above
     public void paint(Graphics g) {
         clearCounter++;
         Graphics2D g2 = (Graphics2D) g;
@@ -33,12 +35,14 @@ public class JavaAnim extends JApplet implements ActionListener {
             drawJava(g2);
         }
     }
-// overriding actionPerformed()of ActionListener interface
+
+    // overriding actionPerformed()of ActionListener interface
 // called by Timer object
     public void actionPerformed(ActionEvent ae) {
         repaint();
     }
-// chooseColor method – discussed above
+
+    // chooseColor method ï¿½ discussed above
     public Color chooseColor() {
         int r = (int) (Math.random() * 255);
         int g = (int) (Math.random() * 255);
@@ -47,7 +51,7 @@ public class JavaAnim extends JApplet implements ActionListener {
         return c;
     }
 
-// chooseFont method – discussed above
+    // chooseFont method ï¿½ discussed above
     public Font chooseFont() {
         int fontChoice = (int) (Math.random() * 4) + 1;
         Font f = null;
@@ -67,7 +71,8 @@ public class JavaAnim extends JApplet implements ActionListener {
         }
         return f;
     }
-// drawJava() method – discussed above
+
+    // drawJava() method ï¿½ discussed above
     public void drawJava(Graphics2D g2) {
         int x = (int) (Math.random() * 1000);
         int y = (int) (Math.random() * 700);

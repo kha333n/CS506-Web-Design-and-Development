@@ -6,7 +6,8 @@ public class EventsEx extends WindowAdapter {
 
     JFrame frame;
     JLabel coordinates;
-// setting layout
+
+    // setting layout
     public void initGUI() {
 // creating event generator
         frame = new JFrame();

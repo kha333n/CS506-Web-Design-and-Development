@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class IOTest{
+public class IOTest {
 
     public static void main(String args[]) {
 
@@ -14,21 +14,20 @@ public class IOTest{
 
             do {
                 String line = bufferedReader.readLine();
-                if (line.equals("")){
+                if (line.equals("")) {
                     break;
                 }
                 String concatenated = counter + " " + line + "\n";
                 bufferedWriter.write(concatenated);
 
                 counter++;
-            }while (true);
+            } while (true);
             bufferedWriter.flush();
             bufferedWriter.close();
             fileWriter.close();
             bufferedReader.close();
             fileReader.close();
-        }
-        catch (IOException ioException){
+        } catch (IOException ioException) {
             System.out.println(ioException);
         }
     }

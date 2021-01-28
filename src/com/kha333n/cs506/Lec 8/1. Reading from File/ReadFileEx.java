@@ -1,7 +1,9 @@
 // File ReadFileEx.java
+
 import java.io.*;
+
 public class ReadFileEx {
-    public static void main (String args[ ]) {
+    public static void main(String args[]) {
         FileReader fr = null;
         BufferedReader br = null;
         try {
@@ -12,16 +14,15 @@ public class ReadFileEx {
             // reading first line from file
             String line = br.readLine();
             // printing and reading remaining lines
-            while (line != null){
+            while (line != null) {
                 System.out.println(line);
                 line = br.readLine();
             }
-                        // closing streams
+            // closing streams
             br.close();
             fr.close();
-            }
-        catch(IOException ioex){
-                System.out.println(ioex);
-            }
+        } catch (IOException ioex) {
+            System.out.println(ioex);
+        }
     } // end main
 } // end class

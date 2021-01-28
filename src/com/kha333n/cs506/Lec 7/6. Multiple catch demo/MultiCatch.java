@@ -7,10 +7,9 @@ public class MultiCatch {
         try {
             FileReader fr = new FileReader("input.txt");
             BufferedReader br = new BufferedReader(fr);
-        }
-        catch (IOException ioEx) {
+        } catch (IOException ioEx) {
             System.out.println(ioEx);
-        }catch (Exception Ex) {
+        } catch (Exception Ex) {
             System.out.println(Ex);
         }
     }

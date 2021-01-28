@@ -1,8 +1,9 @@
 // File ThrowsDemo.java
+
 import java.io.*;
 
 public class ThrowsDemo {
-// contains file reading code
+    // contains file reading code
     public static void method2() throws IOException {
         FileReader fr = new FileReader("strings.txt");
         BufferedReader br = new BufferedReader(fr);
@@ -10,7 +11,8 @@ public class ThrowsDemo {
         String s = br.readLine();
         System.out.println(s);
     }// end method 2
-// calling method2 & handling incoming exception
+
+    // calling method2 & handling incoming exception
     public static void method1() {
         try {
             method2();

@@ -1,4 +1,5 @@
 // importing required packages
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -6,9 +7,10 @@ import java.awt.event.*;
 public class Test {
 
     JFrame f;
-// declaring Reference of MyPanel class
+    // declaring Reference of MyPanel class
     MyPanel p;
-// parameter less constructor
+
+    // parameter less constructor
     public Test() {
         f = new JFrame();
         Container c = f.getContentPane();
@@ -25,9 +27,10 @@ public class Test {
 // registering MyPanel to handle events
         p.addMouseMotionListener(h);
     } // end constructor
-// inner class used for handling events
+
+    // inner class used for handling events
     public class Handler extends MouseMotionAdapter {
-// capturing mouse dagged events
+        // capturing mouse dagged events
         public void mouseDragged(MouseEvent me) {
 // getting the X-Position of mouse and assigning
 // value to instance variable mX of MyPanel class
@@ -40,7 +43,8 @@ public class Test {
             p.repaint();
         } // end mouseDragged
     } // end Handler class
-// main method
+
+    // main method
     public static void main(String args[]) {
         Test t = new Test();
     }

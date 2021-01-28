@@ -1,9 +1,10 @@
 
 // File ThrowsDemo.java
+
 import java.io.*;
 
 public class ThrowsDemo {
-// contains file reading code
+    // contains file reading code
     public static void method2() {
         try {
             FileReader fr = new FileReader("strings.txt");
@@ -15,7 +16,8 @@ public class ThrowsDemo {
             ioEx.printStackTrace();
         }
     }// end method 2
-//only calling method2
+
+    //only calling method2
     public static void method1() {
         method2();
     }

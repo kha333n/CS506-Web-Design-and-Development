@@ -2,11 +2,13 @@
 public class Worker extends Thread {
 
     private String job;
-//Constructor of Worker class
+
+    //Constructor of Worker class
     public Worker(String j) {
         job = j;
     }
-//Override run() method of Thread class
+
+    //Override run() method of Thread class
     public void run() {
         for (int i = 1; i <= 100; i++) {
             System.out.println(job + " = " + i);

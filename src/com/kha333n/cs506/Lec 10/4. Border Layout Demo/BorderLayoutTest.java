@@ -1,4 +1,5 @@
 // File BorderLayoutTest.java
+
 import java.awt.*;
 import javax.swing.*;
 
@@ -6,7 +7,8 @@ public class BorderLayoutTest {
 
     JFrame myFrame;
     JButton b1, b2, b3, b4, b5;
-//method used for setting layout of GUI
+
+    //method used for setting layout of GUI
     public void initGUI() {
         myFrame = new JFrame("Border Layout");
         Container c = myFrame.getContentPane();
@@ -25,6 +27,7 @@ public class BorderLayoutTest {
         myFrame.setSize(300, 150);
         myFrame.setVisible(true);
     } //end initGUI method
+
     public BorderLayoutTest() { // default constructor
         initGUI();
     }

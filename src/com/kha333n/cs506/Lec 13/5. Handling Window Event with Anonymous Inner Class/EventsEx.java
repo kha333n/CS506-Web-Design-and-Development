@@ -25,7 +25,7 @@ public class EventsEx extends WindowAdapter {
                         System.exit(0);
                     } // end window closing
                 } // end WindowAdapter
-                ); // end of addWindowListener
+        ); // end of addWindowListener
         frame.setSize(350, 350);
         frame.setVisible(true);
     } // end initGUI method

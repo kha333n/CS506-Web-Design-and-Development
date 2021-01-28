@@ -1,4 +1,5 @@
 // importing required packages
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -7,7 +8,7 @@ public class AnimTest implements ActionListener {
 
     JFrame f;
     MyPanel p;
-// used to control the direction of ball
+    // used to control the direction of ball
     int x, y;
 
     public AnimTest() {
@@ -31,7 +32,8 @@ public class AnimTest implements ActionListener {
 // action events to listeners
         t.start();
     } // end constructor
-// event handler method
+
+    // event handler method
     public void actionPerformed(ActionEvent ae) {
 // if ball reached to maximum width of frame minus
 // 40 since diameter of ball is 40 then change the
@@ -55,14 +57,15 @@ public class AnimTest implements ActionListener {
         if (p.mY == 0) {
             y = 3;
         }
-// Assign x,y direction to MyPanel’s mX & mY
+// Assign x,y direction to MyPanelï¿½s mX & mY
         p.mX += x;
         p.mY += y;
 // call to repaint() method so that ball is drawn on
 // new locations
         p.repaint();
     } // end actionPerformed() method
-// main method
+
+    // main method
     public static void main(String args[]) {
         AnimTest at = new AnimTest();
     }

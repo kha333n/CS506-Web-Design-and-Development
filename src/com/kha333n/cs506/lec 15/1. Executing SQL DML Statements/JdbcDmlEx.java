@@ -1,5 +1,6 @@
 // File JdbcDmlEx.java
 //step 1: import package
+
 import java.sql.*;
 
 public class JdbcDmlEx {
@@ -11,7 +12,7 @@ public class JdbcDmlEx {
 //Step 3: define the connection URL
             String url = "jdbc:sqlserver://KHA333N\\SQLEXPRESS";
 //Step 4: establish the connection
-            Connection con = DriverManager.getConnection(url,"jdbc","jdbc");
+            Connection con = DriverManager.getConnection(url, "jdbc", "jdbc");
 //Step 5: create Statement
             Statement st = con.createStatement();
 
@@ -19,8 +20,8 @@ public class JdbcDmlEx {
             String addVar = args[0];
 // assigning second command line argument value
             String nameVar = args[1];
-// preparing query – nameVar & addVar strings are embedded
-// into query within ‘" + string + "’
+// preparing query ï¿½ nameVar & addVar strings are embedded
+// into query within ï¿½" + string + "ï¿½
             String sql = "UPDATE Person SET address = '" + addVar + "'"
                     + " WHERE name = '" + nameVar + "' ";
             System.out.println(sql);

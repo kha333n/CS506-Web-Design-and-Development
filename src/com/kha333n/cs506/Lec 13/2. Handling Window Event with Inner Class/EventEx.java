@@ -6,7 +6,8 @@ public class EventEx {
 
     JFrame frame;
     JLabel coordinates;
-// setting layout
+
+    // setting layout
     public void initGUI() {
         frame = new JFrame();
         Container cont = frame.getContentPane();

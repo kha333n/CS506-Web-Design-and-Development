@@ -1,5 +1,6 @@
 // File JdbcDmlEx.java
 //step 1: import package
+
 import java.sql.*;
 
 public class JdbcDmlEx {
@@ -11,7 +12,7 @@ public class JdbcDmlEx {
 //Step 3: define the connection URL
             String url = "jdbc:sqlserver://KHA333N\\SQLEXPRESS";
 //Step 4: establish the connection
-            Connection con = DriverManager.getConnection(url,"jdbc","jdbc");
+            Connection con = DriverManager.getConnection(url, "jdbc", "jdbc");
 // make query and place ? where values are to
 //be inserted later
             String sql = "UPDATE Person SET address = ? "

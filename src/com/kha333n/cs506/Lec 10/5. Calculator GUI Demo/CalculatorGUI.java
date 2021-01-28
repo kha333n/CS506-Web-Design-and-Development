@@ -1,4 +1,5 @@
 // File CalculatorGUI.java
+
 import java.awt.*;
 import javax.swing.*;
 
@@ -10,7 +11,8 @@ public class CalculatorGUI {
     JPanel pButtons;
     JTextField tfAnswer;
     JLabel lMyCalc;
-//method used for setting layout of GUI
+
+    //method used for setting layout of GUI
     public void initGUI() {
         fCalc = new JFrame();
         b0 = new JButton("0");
@@ -61,6 +63,7 @@ public class CalculatorGUI {
         fCalc.setSize(300, 300);
         fCalc.setVisible(true);
     } //end initGUI method
+
     public CalculatorGUI() { // default constructor
         initGUI();
     }

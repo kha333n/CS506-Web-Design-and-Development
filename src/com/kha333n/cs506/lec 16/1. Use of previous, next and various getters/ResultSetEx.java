@@ -1,4 +1,5 @@
 // File ResultSetEx.java
+
 import java.sql.*;
 
 public class ResultSetEx {
@@ -12,7 +13,7 @@ public class ResultSetEx {
             //Step 4: establish the connection
             Connection con = DriverManager.getConnection(url);
             //Step 5: creating PrepareStatement by passing sql and
-            //ResultSet’s constants so that the ResultSet that will
+            //ResultSetï¿½s constants so that the ResultSet that will
             //produce as a result of executing query will be
             //scrollable & updatable
             String sql = "SELECT * FROM Person";
